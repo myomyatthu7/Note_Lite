@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/lavender_startColor"/>
+            <stroke android:color="@color/lavender_listBg"
+                android:width="2dp"
+                />
+            <corners android:radius="7dp"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape>
+            <gradient android:startColor="@color/lavender_startColor"
+                android:endColor="@color/lavender_list_items"
+                android:angle="90"
+                />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="pw_cardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="elevation">300dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="pw_et">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:inputType">textVisiblePassword</item>
+        <item name="android:textColorHint">@color/pw_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="pw_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
+    <style name="title_noteCv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="cardCornerRadius">4dp</item>
+    </style>
+
+    <style name="desc_noteCv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="cardCornerRadius">4dp</item>
+    </style>
+
+    <style name="title_noteEt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:hint">@string/cursor</item>
+    </style>
+
+    <style name="desc_noteEt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:inputType">none</item>
+        <item name="android:hint">@string/cursor</item>
+    </style>
+
+    <style name="et_welcome_pw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/enter_password</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:inputType">textVisiblePassword</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/pw_hint</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="btn_welcome">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:text">@string/go</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="anim_icon_fp">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="lottie_rawRes">@raw/note_lite_fp</item>
+        <item name="lottie_loop">true</item>
+        <item name="lottie_autoPlay">true</item>
+        <item name="android:layout_above">@id/mainCardView</item>
+    </style>
+
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+</resources>

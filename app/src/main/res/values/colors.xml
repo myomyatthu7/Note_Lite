@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pw_et">#E0E4FF</color>
+    <color name="lavender_toolbar">#5563E7</color>
+    <color name="lavender_startColor">#6976EB</color>
+    <color name="lavender_endColor">#919BF0</color>
+    <color name="lavender_list_items">#8692f7</color>
+    <color name="lavender_listBg">#99A2EE</color>
+    <color name="lavender_main">#B7BDF6</color>
+    <color name="dateTime">#565661</color>
+    <color name="welcome">#FEFEFE</color>
+    <color name="pw_hint">#9D9DB6</color>
+    <color name="hint">#3A3A44</color>
+    <color name="lite_black">#262628</color>
+</resources>

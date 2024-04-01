@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/lavender_listBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="@color/pw_et"
+            android:id="@+id/etOldCv"
+            style="@style/pw_cardView">
+            <EditText
+                android:id="@+id/etOldPw"
+                style="@style/pw_et"
+                android:hint="@string/old_password_hint"
+                android:autofillHints="password"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/etNewCv"
+            android:layout_below="@+id/etOldCv"
+            style="@style/pw_cardView"
+            android:backgroundTint="@color/pw_et"
+            >
+            <EditText
+                android:id="@+id/etNewPw"
+                style="@style/pw_et"
+                android:hint="@string/new_password_hint"
+                android:autofillHints="password"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/etNewCv"
+            style="@style/pw_cardView"
+            android:id="@+id/etConfirmCv"
+            android:backgroundTint="@color/pw_et"
+           >
+            <EditText
+                android:id="@+id/etConfirmPw"
+                style="@style/pw_et"
+                android:hint="@string/confirm_password_hint"
+                android:autofillHints="password"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSavePw"
+            android:text="@string/save"
+            style="@style/pw_btn"
+            android:layout_below="@+id/etConfirmCv"
+            android:background="@drawable/btn_welcome"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDeletePw"
+            android:text="@string/delete_c"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/etConfirmCv"
+            android:layout_toEndOf="@+id/btnSavePw"
+            android:background="@drawable/btn_welcome"
+            style="@style/pw_btn"
+            />
+
+        <TextView
+            android:id="@+id/tvForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etConfirmCv"
+            android:layout_alignParentEnd="true"
+            android:text="@string/forgot_pw"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/lite_black" />
+    </RelativeLayout>
+</LinearLayout>

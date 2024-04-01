@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Note Lite</string>
+    <string name="enter_password">Enter password</string>
+    <string name="go">Go</string>
+    <string name="search">search</string>
+    <string name="delete_all">Delete All</string>
+    <string name="pw_setting">Password setting</string>
+    <string name="title">gmail.com</string>
+    <string name="desc">Description is ..</string>
+    <string name="date_time">Apr 1,2024 01:04:44 PM</string>
+    <string name="update">update</string>
+    <string name="delete">delete</string>
+    <string name="save">Save</string>
+    <string name="delete_c">Delete</string>
+    <string name="pw_text">Spaces will be ignored.</string>
+    <string name="about_app">About app</string>
+    <string name="cursor">|</string>
+    <string name="tv_fp">Press fingerprint icon to unlock</string>
+    <string name="forgot_pw">Forgot password?</string>
+    <string name="welcom_msg">Welcome to Note Lite\n* Auto save note\n* Search with title\n* Click 3-dot menu to add password</string>
+    <string name="plus">+</string>
+    <string name="old_password_hint">Old Password</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+
+</resources>

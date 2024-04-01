@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:id="@+id/welcome_screen"
+        android:visibility="visible"
+        android:background="@color/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/welcome_screen"
+            android:layout_width="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/welcome_pw"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:background="@color/welcome"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/welcome_pw"
+            android:scaleType="fitStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mainCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="100dp"
+            android:layout_below="@id/view"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/pw_et"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etGo"
+                    style="@style/et_welcome_pw"
+                    android:autofillHints="password"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnGo"
+                    style="@style/btn_welcome"
+                    android:background="@drawable/btn_welcome"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_fp"
+            android:layout_below="@+id/mainCardView"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/hint"
+            android:layout_alignEnd="@+id/mainCardView"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/btnFprint"
+            style="@style/anim_icon_fp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="@string/search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/deleteAll"
+        android:title="@string/delete_all"
+        />
+    <item android:id="@+id/setting"
+        android:title="@string/pw_setting"/>
+
+    <item android:id="@+id/about"
+        android:title="@string/about_app"
+        />
+</menu>

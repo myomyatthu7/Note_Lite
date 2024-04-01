@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lavender_listBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Note_Add">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_toolbar"
+        app:title="Add Note"
+        android:background="@color/lavender_toolbar"
+        style="@style/toolbar"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitle"
+        android:layout_below="@+id/add_toolbar"
+        style="@style/title_noteCv">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:background="@color/lavender_list_items"
+            style="@style/title_noteEt"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/cvTitle"
+        style="@style/desc_noteCv">
+
+        <EditText
+            android:id="@+id/etDesc"
+            android:background="@color/lavender_list_items"
+            style="@style/desc_noteEt"
+            android:importantForAutofill="no" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
